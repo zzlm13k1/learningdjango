@@ -1,9 +1,6 @@
-<html>
-    <head>
-        <title>{{ title }}</title>
-    </head>
-    <body>
-        <strong>{{ message }}</strong>{{ content }}
-    </body>
-</html>
+<
+{% extends "HelloDjangoApp/layout.html" %}
+{% block content %}
+<span class="message">{{ message }}</span>{{ content }}
+{% endblock %}
 

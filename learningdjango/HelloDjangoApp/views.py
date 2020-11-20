@@ -5,7 +5,15 @@ from django.http import HttpResponse
 from datetime import datetime
 # def index(request):
 #   return HttpResponse("Hello, Django!")
-
+def about(request):
+    return render(
+        request,
+        "HelloDjangoApp/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )
 def index(request):
     now = datetime.now()
 

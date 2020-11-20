@@ -1,5 +1,5 @@
 """
-Definition of urls for learningdjango.
+Definition of urls for DjangoWeb.
 """
 
 from datetime import datetime
@@ -9,8 +9,6 @@ import django.contrib.auth.views
 import app.forms
 import app.views
 
-import HelloDjangoApp.views
-
 # Uncomment the next lines to enable the admin:
 # from django.conf.urls import include
 # from django.contrib import admin
@@ -18,11 +16,10 @@ import HelloDjangoApp.views
 
 urlpatterns = [
     # Examples:
-    url(r'^about$', HelloDjangoApp.views.about, name='about'),
-     url(r'^$', HelloDjangoApp.views.index, name='index'),
-    url(r'^home$', HelloDjangoApp.views.index, name='home'),
-        url(r'^contact$', app.views.contact, name='contact'),
-      url(r'^login/$',
+    url(r'^$', app.views.home, name='home'),
+    url(r'^contact$', app.views.contact, name='contact'),
+    url(r'^about$', app.views.about, name='about'),
+    url(r'^login/$',
         django.contrib.auth.views.login,
         {
             'template_name': 'app/login.html',

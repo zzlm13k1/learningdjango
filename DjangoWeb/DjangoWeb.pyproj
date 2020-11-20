@@ -2,14 +2,14 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <Name>learningdjango</Name>
-    <RootNamespace>learningdjango</RootNamespace>
+    <Name>DjangoWeb</Name>
+    <RootNamespace>DjangoWeb</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>f1aa6032-7cdd-4d3a-8d6c-a303b08d8378</ProjectGuid>
+    <ProjectGuid>9653c47b-dd22-4a5d-8f0a-79812ccf41e9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
@@ -18,7 +18,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
     <LaunchProvider>Django launcher</LaunchProvider>
-    <DjangoSettingsModule>learningdjango.settings</DjangoSettingsModule>
+    <DjangoSettingsModule>DjangoWeb.settings</DjangoSettingsModule>
     <OutputPath>.</OutputPath>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
   </PropertyGroup>
@@ -37,18 +37,11 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
-    <Compile Include="HelloDjangoApp\admin.py" />
-    <Compile Include="HelloDjangoApp\apps.py" />
-    <Compile Include="HelloDjangoApp\migrations\__init__.py" />
-    <Compile Include="HelloDjangoApp\models.py" />
-    <Compile Include="HelloDjangoApp\tests.py" />
-    <Compile Include="HelloDjangoApp\views.py" />
-    <Compile Include="HelloDjangoApp\__init__.py" />
     <Compile Include="manage.py" />
-    <Compile Include="learningdjango\__init__.py" />
-    <Compile Include="learningdjango\settings.py" />
-    <Compile Include="learningdjango\urls.py" />
-    <Compile Include="learningdjango\wsgi.py" />
+    <Compile Include="DjangoWeb\__init__.py" />
+    <Compile Include="DjangoWeb\settings.py" />
+    <Compile Include="DjangoWeb\urls.py" />
+    <Compile Include="DjangoWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -60,18 +53,9 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
-    <Folder Include="HelloDjangoApp\" />
-    <Folder Include="HelloDjangoApp\migrations\" />
-    <Folder Include="HelloDjangoApp\static\" />
-    <Folder Include="HelloDjangoApp\templates\" />
-    <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
-    <Folder Include="learningdjango\" />
+    <Folder Include="DjangoWeb\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\about.html" />
-    <Content Include="HelloDjangoApp\static\site.css" />
-    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
-    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\layout.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
